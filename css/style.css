@@ -218,7 +218,7 @@ strong {
   height: 100vh;
   background-image:
   linear-gradient(
-    #ffffff, #eeeeee
+    #eeeeee, #ffffff
   );
   border-bottom: .3vh solid #eee;
   position: relative;
@@ -262,9 +262,9 @@ strong {
   height: 100vh;
   background-image:
   linear-gradient(
-    #eeeeee, #ffffff
+    #ffffff, #eeeeee
   );
-  border-bottom: .3vh solid #eee;
+  border-bottom: .3vh solid #fff;
   position: relative;
 }
 
@@ -274,12 +274,23 @@ strong {
 
 }
 
+/* resume */
+.resume {
+  height: 100vh;
+  background-image:
+  linear-gradient(
+    #ffffff, #eeeeee
+  );
+  border-bottom: .3vh solid #fff;
+  position: relative;
+}
+
 /* contact */
 .contact {
   height: 100vh;
   background-image:
   linear-gradient(
-    #ffffff, #eeeeee
+    #eeeeee, #ffffff
   );
   border-bottom: .3vh solid #eee;
   position: relative;
