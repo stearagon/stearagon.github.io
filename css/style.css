@@ -50,10 +50,10 @@ h2 {
 
 /* sidebar */
 #sidebar {
-  border-top: .1vh solid #000;
+  /*border-top: .1vh solid #000;
   border-bottom: .1vh solid #000;
   border-left: .1vw solid #000;
-  border-right: .1vw solid #000;
+  border-right: .1vw solid #000;*/
   width: 25%;
   height: 100vh;
   float: left;
@@ -78,15 +78,18 @@ h2 {
   color: #ccc;
 }
 
-#sidebar ul {
+#sidebar .nav-links {
   text-align: right;
-  padding-right: 2vw;
-  padding-top: 2vw;
+  padding-top: 3vh;
 }
 
-#sidebar li {
-  padding: 2vh 0;
+.nav-links li {
+  padding: 2vh 2vw;
   font-size: 2.5vh;
+}
+
+.nav-links li:hover {
+  background: #ccc;
 }
 
 #sidebar .nav-icon {
@@ -99,13 +102,17 @@ h2 {
 
 #sidebar .contact-links {
   float: right;
-  padding-top: 32vh;
+  padding-top: 34vh;
   padding-right: 2vw;
 }
 
 #sidebar .contact-links li {
   float:left;
   padding-left: 2vw;
+}
+
+#sidebar .contact-links li:hover {
+  opacity: 0.3;
 }
 
 .contact-links img {
@@ -115,7 +122,8 @@ h2 {
 
 /* main window */
 #main {
-  border: .3vh solid #000;
+  /*border-top: .3vh solid #eee;*/
+  /*border-top: .3vh solid #eee;*/
   top: 0;
   float: right;
   overflow: hidden;
@@ -138,7 +146,7 @@ h2 {
   linear-gradient(
     #eeeeee, #ffffff
   );
-  border-bottom: .3vh solid #000;
+  border-bottom: .3vh solid #eee;
 }
 
 #main .intro h1 {
@@ -212,7 +220,7 @@ strong {
   linear-gradient(
     #ffffff, #eeeeee
   );
-  border-bottom: .3vh solid #000;
+  border-bottom: .3vh solid #eee;
   position: relative;
 }
 
@@ -220,7 +228,7 @@ strong {
   display: block;
   height: 25vh;
   width: 100vw;
-  padding-top: 3vh;
+  margin-top: 3vh;
 }
 
 .project-window:nth-child(2){
@@ -232,10 +240,10 @@ strong {
   height: 22vh;
   width: auto;
   margin: 0vh auto 0vh 10vw;
-  border-top: .3vh solid #000;
-  border-bottom: .3vh solid #000;
-  border-left: .3vw solid #000;
-  border-right: .3vw solid #000;
+  border-top: .3vh solid #aaa;
+  border-bottom: .3vh solid #aaa;
+  border-left: .3vw solid #aaa;
+  border-right: .3vw solid #aaa;
 }
 
 .project-window ul {
@@ -254,10 +262,16 @@ strong {
   height: 100vh;
   background-image:
   linear-gradient(
-    #ffffff, #eeeeee
+    #eeeeee, #ffffff
   );
-  border-bottom: .3vh solid #000;
+  border-bottom: .3vh solid #eee;
   position: relative;
+}
+
+.about-me p {
+  font-size: 4vh;
+  margin: 15vh 5vw;
+
 }
 
 /* contact */
@@ -267,6 +281,6 @@ strong {
   linear-gradient(
     #ffffff, #eeeeee
   );
-  border-bottom: .3vh solid #000;
+  border-bottom: .3vh solid #eee;
   position: relative;
 }
