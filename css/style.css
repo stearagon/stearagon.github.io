@@ -229,6 +229,7 @@ strong {
   height: 25vh;
   width: 100vw;
   margin-top: 3vh;
+  position: relative;
 }
 
 .project-window:nth-child(2){
@@ -244,6 +245,8 @@ strong {
   border-bottom: .3vh solid #aaa;
   border-left: .3vw solid #aaa;
   border-right: .3vw solid #aaa;
+  position: relative;
+  z-index: 5;
 }
 
 .project-window ul {
@@ -255,6 +258,24 @@ strong {
 
 .project-window img:hover {
   opacity: .2;
+  z-index: 0;
+}
+
+.project-window .live-link,
+.project-window .github-link {
+  position: absolute;
+  left: 16vw;
+}
+
+
+.project-window .live-link {
+  top: 8vh;
+  z-index: 0;
+}
+
+.project-window .github-link {
+  top: 15vh;
+  z-index: 2;
 }
 
 /* about-me */
