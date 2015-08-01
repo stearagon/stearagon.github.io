@@ -35,7 +35,6 @@ img {
 
 body {
   position: relative;
-  width: 100%;
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -102,7 +101,7 @@ h2 {
 
 #sidebar .contact-links {
   float: right;
-  padding-top: 30vh;
+  padding-top: 26vh;
   padding-right: 2vw;
 }
 
@@ -265,6 +264,7 @@ strong {
 .project-window .github-link {
   position: absolute;
   left: 16vw;
+  font-size: 3vh;
 }
 
 
