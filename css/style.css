@@ -37,6 +37,7 @@ body {
   position: relative;
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
+  background: #000;
 }
 
 h1 {
@@ -47,6 +48,11 @@ h2 {
   font-size: 3vmin;
 }
 
+.main-window {
+  width: 900px;
+  margin: 0 auto;
+}
+
 /* sidebar */
 #sidebar {
   /*border-top: .1vh solid #000;
@@ -54,7 +60,7 @@ h2 {
   border-left: .1vw solid #000;
   border-right: .1vw solid #000;*/
   width: 25%;
-  height: 100vh;
+  height: 100%;
   float: left;
   position: fixed;
   padding-top: 5vh;
@@ -100,9 +106,12 @@ h2 {
 }
 
 #sidebar .contact-links {
-  float: right;
+  /*float: right;
   padding-top: 26vh;
-  padding-right: 2vw;
+  padding-right: 2vw;*/
+  position: absolute;
+  bottom: 3vmin;
+  right: 2vmin;
 }
 
 #sidebar .contact-links li {
@@ -127,6 +136,7 @@ h2 {
   float: right;
   overflow: hidden;
   width: 74%;
+  height: 100%;
 }
 
 #main h1 {
@@ -214,7 +224,7 @@ strong {
 
 /* projects */
 .projects {
-  height: 100vh;
+  /*height: 100vh;*/
   background-image:
   linear-gradient(
     #eeeeee, #ffffff
@@ -280,7 +290,7 @@ strong {
 
 /* about-me */
 .about-me {
-  height: 100vh;
+  /*height: 100vh;*/
   background-image:
   linear-gradient(
     #ffffff, #eeeeee
@@ -297,7 +307,7 @@ strong {
 
 /* resume */
 .resume {
-  height: 100vh;
+  /*height: 100vh;*/
   background-image:
   linear-gradient(
     #ffffff, #eeeeee
@@ -308,7 +318,7 @@ strong {
 
 /* contact */
 .contact {
-  height: 100vh;
+  /*height: 100vh;*/
   background-image:
   linear-gradient(
     #eeeeee, #ffffff
