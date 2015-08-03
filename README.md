@@ -1,3 +1,3 @@
 # My Portfolio Site
 
-[Live Link](http:://stevearagon.io)
+[Live Link](http://stevearagon.io)
