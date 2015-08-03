@@ -346,10 +346,6 @@ strong {
   padding: 5px 0px;
 }
 
-/*.project-window img:hover {
-  opacity: .2;
-  z-index: 0;
-}*/
 
 .project-window .live-link,
 .project-window .github-link {
@@ -360,6 +356,7 @@ strong {
   background: #ccc;
   padding: 5px;
   border-radius: 5px;
+  border: 1px solid #fff;
 }
 
 .project-window .live-link:hover,
