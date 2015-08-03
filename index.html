@@ -5,6 +5,7 @@
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Load ScrollTo --><script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Steve Aragon: Web Developer</title>
     <script>
@@ -20,15 +21,15 @@
   </head>
   <body class="group">
     <div id="sidebar">
-        <a href=""><h1 class="main-logo">Steve</h1>
+        <a href="top"><h1 class="main-logo">Steve</h1>
         <h1 class="main-logo">Aragon</h1></a>
         <h2 class="main-logo">Web Developer</h2>
         <ul class="nav-links">
-          <a href="#intro"><li class="nav-list-item">Intro <img class="nav-icon" src="assets/images/home.svg"></li></a>
-          <a href="#about-me"><li class="nav-list-item">About Me<img class="nav-icon" src="assets/images/man.svg"></li></a>
-          <a href="#projects"><li class="nav-list-item">Projects<img class="nav-icon" src="assets/images/folder.svg"></li></a>
-          <a href="#resume"><li class="nav-list-item">Resume<img class="nav-icon" src="assets/images/resume.svg"></li></a>
-          <a href="#contact"><li class="nav-list-item">Contact<img class="nav-icon" src="assets/images/mail.svg"></li></a>
+          <a href="intro"><li class="nav-list-item">Intro <img class="nav-icon" src="assets/images/home.svg"></li></a>
+          <a href="about-me"><li class="nav-list-item">About Me<img class="nav-icon" src="assets/images/man.svg"></li></a>
+          <a href="projects"><li class="nav-list-item">Projects<img class="nav-icon" src="assets/images/folder.svg"></li></a>
+          <a href="resume"><li class="nav-list-item">Resume<img class="nav-icon" src="assets/images/resume.svg"></li></a>
+          <a href="contact"><li class="nav-list-item">Contact<img class="nav-icon" src="assets/images/mail.svg"></li></a>
         </ul>
 
         <ul class="contact-links group">
@@ -41,6 +42,7 @@
     <div class="main-window">
 
       <div id="main">
+        <a name="top"></a>
         <a name="intro"></a>
         <section class="intro">
           <h1 class="name">Steve Aragon</h1>
@@ -67,11 +69,10 @@
         <section class="about-me">
           <h1 class="secondary-h1">About Me</h1>
           <p>
-            Former investment research professional turned software engineer and
-            aspiring sports handicapper. Loves anything that promotes efficiency as
-            well as advanced sports statistics and puns of all varieties. Still
-            like to invest when I see value or vision. Almost finished writing a comical
-            spy-thriller (Well, it's done now, but needs editing).<br><br>
+            Web developer and aspiring sports handicapper. Former investment research professional.
+            Loves anything that promotes efficiency as well as advanced sports statistics and puns
+            of all varieties. Still like to invest when I see value or vision. Almost finished writing a comical
+            spy-thriller (Well, it's done now but needs editing).<br><br>
             I created this site to display my recent projects as
             well as house <a href="http://blog.stevearagon.io">my blog</a> which keeps track of random thoughts as well
             as progress in my endeavors.<br><br>
@@ -88,7 +89,7 @@
             <a class="github-link display-none" href="http://www.github.com/stearagon/sixth-cents">GitHub Link</a>
             <ul>
               <li><h2>Sixth Cents</h2></li>
-              <li>- A personal finance management app</li>
+              <li>A personal finance management app</li>
               <li>- Keep track of financial health</li>
               <li>- Utilizes RESTful JSON API back-end</li>
               <li>- Single-page Backbone application</li>
@@ -101,7 +102,7 @@
             <a class="github-link display-none" href="http://www.github.com/stearagon/asteroids">GitHub Link</a>
             <ul>
               <li><h2>Asteroids</h2></li>
-              <li>- My version of 1979 classic</li>
+              <li>My version of the 1979 classic</li>
               <li>- Increases in difficulty as game progresses</li>
               <li>- Uses HTML5 Canvas to render board</li>
               <li>- Employs Trignometry to render ship position</li>
@@ -113,7 +114,7 @@
             <a class="github-link display-none" style=" top: 55px" href="http://www.github.com/stearagon/rails-lite">GitHub Link</a>
             <ul>
               <li><h2>Rails-Lite</h2></li>
-              <li>- Ruby web framework</li>
+              <li>Ruby web framework</li>
               <li>- Emulates Rails controller + routing functionality</li>
               <li>- Applies meta-programming methods</li>
               <li>- Parses nested params using Regex</li>
@@ -124,8 +125,7 @@
         <section class="resume">
           <h1 class="secondary-h1">Resume</h1>
           <div class="resume-viewer">
-            <iframe src="http://docs.google.com/gview?url=https://dl.dropboxusercontent.com/u/22258339/site/assets/Steve_Aragon_Resume.pdf&embedded=true"
-            style="width:600px; height:775px;" frameborder="0"></iframe>
+            <iframe src="https://drive.google.com/file/d/0B7A1umwBD_SjMkUyc1JITkJkams/preview" width="600" height="775"></iframe>
           </div>
         </section>
         <a name="contact"></a>
@@ -155,13 +155,20 @@
     <script type="text/javascript">
       $( ".project-window" ).hover(
         function() {
-          $($( this ).find(".live-link")).toggleClass( "display-none" );
-          $($( this ).find(".github-link")).toggleClass( "display-none" );
+          $($( this ).find(".live-link")).removeClass( "display-none" );
+          $($( this ).find(".github-link")).removeClass( "display-none" );
+          $($( this ).find(".live-link")).addClass( "display-now" );
+          $($( this ).find(".github-link")).addClass( "display-now" );
         }, function() {
-          $($( this ).find(".live-link")).toggleClass( "display-none" );
-          $($( this ).find(".github-link")).toggleClass( "display-none" );
+          $($( this ).find(".live-link")).removeClass( "display-now" );
+          $($( this ).find(".github-link")).removeClass( "display-now" );
+          $($( this ).find(".live-link")).addClass( "display-none" );
+          $($( this ).find(".github-link")).addClass( "display-none" );
         }
       );
+
+      $('#sidebar a[href="#intro"] li').addClass('active');
+      $('#sidebar a[href="#intro"]').siblings().find("li").removeClass("active")
 
 
       $("#main").scroll(function() {
@@ -173,23 +180,33 @@
           var div_four_top = $('a[name=resume]').position().top;
           var div_five_top = $('a[name=contact]').position().top;
 
-          if(scroll_top > div_one_top - 100 && scroll_top < div_two_top - 100) {
-              $('#sidebar a[href="#intro"] li').addClass('active');
-              $('#sidebar a[href="#intro"]').siblings().find("li").removeClass("active")
+          if(scroll_top >= 0 && scroll_top < div_two_top - 100) {
+              $('#sidebar a[href="intro"] li').addClass('active');
+              $('#sidebar a[href="intro"]').siblings().find("li").removeClass("active")
           } else if( scroll_top > div_two_top - 100 && scroll_top < div_three_top-50) {
-             $('#sidebar a[href="#about-me"] li').addClass('active');
-             $('#sidebar a[href="#about-me"]').siblings().find("li").removeClass("active")
+             $('#sidebar a[href="about-me"] li').addClass('active');
+             $('#sidebar a[href="about-me"]').siblings().find("li").removeClass("active")
           } else if( scroll_top > div_three_top-100 && scroll_top < div_four_top-100) {
-             $('#sidebar a[href="#projects"] li').addClass('active');
-             $('#sidebar a[href="#projects"]').siblings().find("li").removeClass("active")
-           } else if( scroll_top > div_four_top + 300) {
-              $('#sidebar a[href="#contact"] li').addClass('active');
-              $('#sidebar a[href="#contact"]').siblings().find("li").removeClass("active")
+             $('#sidebar a[href="projects"] li').addClass('active');
+             $('#sidebar a[href="projects"]').siblings().find("li").removeClass("active")
+           } else if( scroll_top > div_four_top + 200) {
+              $('#sidebar a[href="contact"] li').addClass('active');
+              $('#sidebar a[href="contact"]').siblings().find("li").removeClass("active")
            } else if( scroll_top > div_four_top - 100) {
-               $('#sidebar a[href="#resume"] li').addClass('active');
-               $('#sidebar a[href="#resume"]').siblings().find("li").removeClass("active")
+               $('#sidebar a[href="resume"] li').addClass('active');
+               $('#sidebar a[href="resume"]').siblings().find("li").removeClass("active")
            }
       });
+
+        $(".nav-links a").click(function(event) {
+          event.preventDefault();
+          $("#main").scrollTo($("a[name=" + $(event.currentTarget).attr("href") + "]"),{duration: 500})
+        })
+
+        $("a[href=\"top\"]").click(function(event) {
+          event.preventDefault();
+          $("#main").scrollTo($("a[name=top]"),{duration: 500})
+        })
     </script>
   </body>
 </html>

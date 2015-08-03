@@ -48,7 +48,15 @@ h2 {
 }
 
 .display-none {
-  display: none;
+  /*display: none;*/
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.display-now {
+  /*display: none;*/
+  opacity: 1;
+  transition: 1.5s;
 }
 
 .main-window {
@@ -291,8 +299,9 @@ strong {
 }
 
 .about-me p {
-  font-size: 22px;
+  font-size: 20px;
   margin: 15px 5px;
+  font-family: "Lato", sans-serif;
 }
 
 /* projects */
@@ -313,6 +322,7 @@ strong {
   margin: 3vw auto;
   position: relative;
   overflow: hidden;
+  font-family: "Lato", sans-serif;
 }
 
 .project-window:nth-child(2){
@@ -357,6 +367,7 @@ strong {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #fff;
+
 }
 
 .project-window .live-link:hover,
@@ -393,6 +404,7 @@ strong {
   width: 600px;
   padding-top: 10px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 /* contact */
