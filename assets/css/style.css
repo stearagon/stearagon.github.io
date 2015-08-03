@@ -54,7 +54,6 @@ h2 {
 }
 
 .display-now {
-  /*display: none;*/
   opacity: 1;
   transition: 1.5s;
 }
@@ -367,13 +366,13 @@ strong {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #fff;
-
 }
 
 .project-window .live-link:hover,
 .project-window .github-link:hover {
   background: #000;
   color: #fff;
+  transition: 0s;
 }
 
 .project-window .live-link {
