@@ -435,6 +435,6 @@ strong {
   letter-spacing: 2px;
 }
 
-/*.contact-box:hover img {
+.contact-box:hover a {
   opacity: .5;
-}*/
+}
