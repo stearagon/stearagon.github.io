@@ -213,11 +213,15 @@ strong {
 }
 
 .coding-skills {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .coding-skills table {
   margin: 0 auto;
+}
+
+.coding-skills td {
+  position: relative;
 }
 
 .coding-icon {
@@ -226,6 +230,38 @@ strong {
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 25px;
+}
+
+.coding-skills td:after {
+  content: attr(title);
+  display: none;
+  position: absolute;
+  left: 70%;
+  transform: translateX(-50%);
+  bottom: 74px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.coding-skills td:before {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 70%;
+  transform: translateX(-50%);
+  bottom: 70px;
+  border-top: 5px solid #000;
+  border-bottom: 0;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.coding-skills td:hover:before,
+.coding-skills td:hover:after {
+  display: block;
 }
 
 /* about-me */
@@ -251,7 +287,7 @@ strong {
 }
 
 .about-me a:hover {
-  color: #fff;
+  color: #E25D33;
 }
 
 .about-me p {
