@@ -162,7 +162,7 @@ h2 {
   linear-gradient(
     #eeeeee, #ffffff
   );
-  border-bottom: 1px solid #eee;
+  border-bottom: 5px solid #eee;
 }
 
 #main .intro h1 {
@@ -278,7 +278,7 @@ strong {
   linear-gradient(
     #ffffff, #eeeeee
   );
-  border-bottom: 1px solid #fff;
+  border-bottom: 5px solid #fff;
   position: relative;
 }
 
@@ -303,7 +303,7 @@ strong {
   linear-gradient(
     #eeeeee, #ffffff
   );
-  border-bottom: 1px solid #eee;
+  border-bottom: 5px solid #eee;
   overflow: hidden;
 }
 
@@ -324,10 +324,10 @@ strong {
   height: 150px;
   width: auto;
   margin: 0px auto 0px 10px;
-  border-top: .3px solid #aaa;
-  border-bottom: .3px solid #aaa;
-  border-left: .3px solid #aaa;
-  border-right: .3px solid #aaa;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
   position: relative;
   z-index: 5;
 }
@@ -387,7 +387,7 @@ strong {
   linear-gradient(
     #ffffff, #eeeeee
   );
-  border-bottom: 1px solid #fff;
+  border-bottom: 5px solid #fff;
   position: relative;
 }
 
@@ -406,7 +406,7 @@ strong {
   linear-gradient(
     #eeeeee, #ffffff
   );
-  border-bottom: .3px solid #eee;
+  border-bottom: 5px solid #eee;
   position: relative;
 
 }
