@@ -72,7 +72,7 @@ h2 {
   padding-top: 20px;
   background: #E25D33;
   color: #FEFFF8;
-  box-shadow: 10px 3px 18px -3px rgba(0,0,0,0.75);
+  box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 #sidebar h1, #sidebar h2 {
