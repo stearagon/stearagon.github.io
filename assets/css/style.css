@@ -50,12 +50,12 @@ h2 {
 .display-none {
   /*display: none;*/
   opacity: 0;
-  transition: 1.5s;
+  transition: 0.2s;
 }
 
 .display-now {
   opacity: 1;
-  transition: 1.5s;
+  transition: 0.2s;
 }
 
 .main-window {
@@ -86,6 +86,7 @@ h2 {
 
 #sidebar h1 {
   letter-spacing: 4px;
+  font-family: "Lato", sans-serif;
 }
 
 #sidebar h2 {
@@ -348,7 +349,7 @@ strong {
 }
 
 .project-window ul h2 {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .project-window li {
