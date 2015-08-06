@@ -95,6 +95,7 @@ h2 {
   color: #ccc;
   letter-spacing: 4px;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 #sidebar .nav-links {
@@ -107,6 +108,7 @@ h2 {
   padding: 10px 12px;
   font-size: 20px;
   font-weight: lighter;
+  -webkit-font-smoothing: antialiased;
 }
 
 .active {
