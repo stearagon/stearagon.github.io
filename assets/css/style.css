@@ -94,16 +94,19 @@ h2 {
   padding-right: 13px;
   color: #ccc;
   letter-spacing: 4px;
+  font-weight: 400;
 }
 
 #sidebar .nav-links {
   text-align: right;
   padding-top: 20px;
+  font-weight: lighter;
 }
 
 .nav-links li {
   padding: 10px 12px;
   font-size: 20px;
+  font-weight: lighter;
 }
 
 .active {
