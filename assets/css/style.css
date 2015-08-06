@@ -163,7 +163,7 @@ h2 {
 
 /* intro */
 .intro {
-  margin: 20px;
+  /*margin: 20px 20px 0px 20px;*/
   position: relative;
   color: #FEFFF8;
   background-image:
@@ -237,7 +237,7 @@ strong {
   height: auto;
   padding-left: 20px;
   padding-top: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 .coding-skills td:after {
@@ -275,13 +275,16 @@ strong {
 /* about-me */
 
 #main .secondary-h1 {
-  font-size: 30px;
+  font-size: 52px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
 }
 
 .about-me {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 20px 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
+  /*padding: 20px 20px;*/
   background-image:
   linear-gradient(
     #ffffff, #eeeeee
@@ -300,14 +303,17 @@ strong {
 
 .about-me p {
   font-size: 20px;
-  margin: 15px 5px;
+  margin: 0 auto;
   font-family: "Lato", sans-serif;
+  font-weight: lighter;
+  width: 600px;
+  padding-bottom: 30px;
 }
 
 /* projects */
 .projects {
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   background-image:
   linear-gradient(
     #eeeeee, #ffffff
@@ -326,7 +332,7 @@ strong {
 }
 
 .project-window:nth-child(2){
-  margin-top: 2vw;
+  margin-top: 0vw;
 }
 
 .project-window img {
@@ -349,11 +355,13 @@ strong {
 }
 
 .project-window ul h2 {
-  font-weight: bold;
+  font-weight: lighter;
+  font-size: 20px;
 }
 
 .project-window li {
   padding: 5px 0px;
+  font-weight: lighter;
 }
 
 
@@ -361,7 +369,7 @@ strong {
 .project-window .github-link {
   position: absolute;
   left: 100px;
-  font-size: 20px;
+  font-size: 18px;
   z-index: 6;
   background: #fff;
   padding: 5px;
@@ -389,8 +397,8 @@ strong {
 
 /* resume */
 .resume {
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   background-image:
   linear-gradient(
     #ffffff, #eeeeee
@@ -409,8 +417,8 @@ strong {
 
 /* contact */
 .contact {
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   background-image:
   linear-gradient(
     #eeeeee, #ffffff
@@ -423,30 +431,31 @@ strong {
 .contact-page {
   margin: 0 auto;
   overflow: hidden;
-  width: 677px;
+  width: 715px;
 }
 
-.contact-page a {
-  font-size: 20px;
+.contact-page p {
+  text-align: center;
+  font-size: 30px;
 }
 
 .contact-box {
   float: left;
-  padding: 50px;
+  padding: 20px 40px;
 }
 
 .contact img {
-  height: 50px;
+  height: 80px;
   width: auto;
   display: block;
   margin: 0 auto;
 }
 
-.contact a {
+.contact p {
   margin: 0 auto;
   letter-spacing: 2px;
 }
 
-.contact-box:hover a {
+.contact-box:hover p {
   opacity: .5;
 }
