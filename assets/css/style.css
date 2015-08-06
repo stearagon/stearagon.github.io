@@ -87,6 +87,7 @@ h2 {
 #sidebar h1 {
   letter-spacing: 4px;
   font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 #sidebar h2 {
