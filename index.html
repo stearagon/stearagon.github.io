@@ -33,7 +33,7 @@
           <a href="contact"><li class="nav-list-item">Contact<img class="nav-icon" src="assets/images/mail.svg"></li></a>
         </ul>
 
-        <ul class="contact-links group">
+        <ul class="contact-links group display-zero">
           <li><a href="http://www.github.com/stearagon"><img src="assets/images/github.svg"></a></li>
           <li><a href="http://www.linkedin.com/in/stevearagon"><img src="assets/images/linkedin.svg"></a></li>
           <li><a href="http://blog.stevearagon.io"><img src="assets/images/tumblr.svg"></a></li>
@@ -41,9 +41,7 @@
         </ul>
     </div>
     <div class="main-window">
-
       <div id="main">
-        <div class="mobile-space display-zero"></div>
         <a name="top"></a>
         <a name="intro"></a>
         <section class="intro">
@@ -210,7 +208,17 @@
           $("#main").scrollTo($("a[name=top]"),{duration: 500})
         })
 
-        $(".mobile-space").height($("#sidebar").height());
+        if($(window).width() <= 660){
+          $(window).on('resize', function(){
+             $("#main").height($(window).height()-$("#sidebar").height());
+          });
+        } else {
+          $(window).on('resize', function(){
+            $("#main").height($(window).height());
+          )}
+        }
+
+
     </script>
   </body>
 </html>
