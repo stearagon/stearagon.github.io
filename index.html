@@ -208,15 +208,13 @@
           $("#main").scrollTo($("a[name=top]"),{duration: 500})
         })
 
-        if($(window).width() <= 800){
-          $(window).on('resize', function(){
-             $("#main").height($(window).height()-$("#sidebar").height());
-          });
-        } else {
-          $(window).on('resize', function(){
+        $(window).on('resize', function(){
+          if($(window).width() <= 800){
+            $("#main").height($(window).height()-$("#sidebar").height());
+          } else {
             $("#main").height($(window).height());
-          })
-        }
+          }
+        })
 
 
     </script>
