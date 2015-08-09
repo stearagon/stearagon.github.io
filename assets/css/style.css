@@ -435,13 +435,15 @@ strong {
   );
   border-bottom: 5px solid #eee;
   position: relative;
-
+  text-align: center;
 }
 
 .contact-page {
+  text-align: center;
   margin: 0 auto;
   overflow: hidden;
-  width: 634px;
+  /*width: 634px;*/
+  display: inline-block;
 }
 
 .contact-page p {
@@ -451,7 +453,7 @@ strong {
 
 .contact-box {
   float: left;
-  padding: 20px 30px;
+  padding: 2vw 3vw;
 }
 
 .contact img {
@@ -561,20 +563,31 @@ strong {
 
   .coding-skills table{
     width: auto;
-    padding: 0px 10px;
+    padding: 0px 0px;
+    margin: 0 auto;
+  }
+
+
+  .coding-skills td:after {
+    display: none;
+  }
+
+  .coding-skills td:before {
+    display: none;
   }
 
   .coding-skills td {
-
+    width: 6vw;
   }
 
   .coding-icon {
-    width: 60%;
+    width: 100%;
     height: auto;
     padding-left: 0.1em;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
   }
+
 
   .coding-skills td:after {
     bottom: 2em;
@@ -582,6 +595,11 @@ strong {
 
   .coding-skills td:before {
     bottom: 1.3em;
+  }
+
+  .coding-skills td:hover:before,
+  .coding-skills td:hover:after {
+    display: none;
   }
 
   .splash-img {
@@ -660,21 +678,23 @@ strong {
     height: 100vw;
   }
 
-  .contact-page {
-    margin: 0 auto;
+  .contact {
     text-align: center;
-    width: 80vw;
+  }
+
+  .contact-page {
+    display: inline-block;
   }
 
   .contact-box {
-    margin: 1%;
+    /*margin: 1%;
     padding: 1em;
-    display: block;
+    display: block;*/
   }
 
-  .contact img {
-    height: 2em;
-    width: auto;
+  .contact-box img {
+    height: auto;
+    width: 10vw;
     display: block;
     margin: 0 auto;
   }
@@ -687,9 +707,12 @@ strong {
     display: block;
   }
 
+  .nav-links li:hover {
+    background: none;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 600px) {
   body {
     overflow-y: hidden;
   }
@@ -713,7 +736,7 @@ strong {
   #sidebar .top {
     margin: 0 auto;
     display: block;
-    float: left;
+    /*float: left;*/
   }
   #sidebar h1 {
     font-size: 2em;
@@ -745,6 +768,10 @@ strong {
     padding-left: 0px;
     margin-left: 0px;
     display: inline-block;
+  }
+
+  .nav-links li:hover {
+    background: none;
   }
 
   .nav-icon {
@@ -785,25 +812,28 @@ strong {
     padding: 0px 10px;
   }
 
-  .coding-skills td {
+  .coding-skills img {
+    margin: 0;
+    width: 100%;
+  }
 
+  .coding-skills td {
+    width: 6vw;
   }
 
   .coding-icon {
-    width: 60%;
+    width: 100%;
     height: auto;
     padding-left: 0.1em;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
   }
 
-  .coding-skills td:after {
-    bottom: 2em;
+  .coding-skills td:hover:before,
+  .coding-skills td:hover:after {
+    display: none;
   }
 
-  .coding-skills td:before {
-    bottom: 1.3em;
-  }
 
   .splash-img {
     height: 10em;
@@ -882,20 +912,22 @@ strong {
   }
 
   .contact-page {
-    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .contact {
     text-align: center;
-    width: 80vw;
   }
 
   .contact-box {
-    margin: 1%;
-    padding: 1em;
-    display: block;
+    /*margin: 1%;
+    padding: 1em;*/
+    /*display: block;*/
   }
 
   .contact img {
-    height: 2em;
-    width: auto;
+    height: auto;
+    width: 10vw;
     display: block;
     margin: 0 auto;
   }
