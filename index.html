@@ -223,15 +223,18 @@
           }
         })
 
-        addEventListener("click", function() {
-            var el = document.documentElement
-            , rfs =
-                   el.requestFullScreen
-                || el.webkitRequestFullScreen
-                || el.mozRequestFullScreen
-            ;
-            rfs.call(el);
-        });
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+          addEventListener("click", function() {
+              var el = document.documentElement
+              , rfs =
+                     el.requestFullScreen
+                  || el.webkitRequestFullScreen
+                  || el.mozRequestFullScreen
+              ;
+              rfs.call(el);
+          });
+        }
+
 
     </script>
   </body>
