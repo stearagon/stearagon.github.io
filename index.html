@@ -209,6 +209,12 @@
           $("#main").scrollTo($("a[name=top]"),{duration: 500})
         })
 
+        if($(window).width() <= 900){
+          $("#main").height($(window).height()-$("#sidebar").height());
+        } else {
+          $("#main").height($(window).height());
+        }
+
         $(window).on('resize', function(){
           if($(window).width() <= 900){
             $("#main").height($(window).height()-$("#sidebar").height());
