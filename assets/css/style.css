@@ -158,6 +158,7 @@ h2 {
   top: 0;
   float: right;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   width: 73.5%;
   height: 100vh;
 
@@ -541,6 +542,7 @@ strong {
     float: none;
     overflow-x: hidden;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .main-window {
@@ -787,6 +789,7 @@ strong {
     float: none;
     overflow-x: hidden;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .main-window {
@@ -795,16 +798,17 @@ strong {
   }
 
   .intro .name {
-    font-size: 2em;
+    font-size: 3.5em;
   }
 
+
   #main .intro .title {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
 
 
   .intro .tagline {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   .coding-skills table{
@@ -836,7 +840,7 @@ strong {
 
 
   .splash-img {
-    height: 10em;
+    height: 15em;
   }
 
   #main .secondary-h1 {
