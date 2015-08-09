@@ -716,7 +716,7 @@ strong {
 
 @media (max-width: 900px) and (min-width: 600px) {
   body {
-    /*overflow-y: scroll;*/
+    overflow-y: hidden;
   }
 
   #sidebar {
