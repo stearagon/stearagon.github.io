@@ -53,6 +53,10 @@ h2 {
   transition: 0.2s;
 }
 
+.display-zero {
+  display: none;
+}
+
 .display-now {
   opacity: 1;
   transition: 0.2s;
@@ -465,4 +469,218 @@ strong {
 
 .contact-box:hover p {
   opacity: .5;
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    overflow-y: hidden;
+  }
+
+  #sidebar {
+    min-width: 0;
+    width: 100%;
+    position: fixed;
+    height: auto;
+    padding-top: 5px;
+    padding-left: 15px;
+    margin: 0 auto;
+    z-index: 7;
+  }
+
+  #sidebar h1,
+  #sidebar h2 {
+    text-align: left;
+  }
+
+  #sidebar .top {
+    margin: 0 auto;
+    display: block;
+  }
+  #sidebar h1 {
+    font-size: 2em;
+    display: inline-block;
+  }
+
+  #sidebar h2 {
+    font-size: 1.75em;
+    display: inline-block;
+  }
+
+  #sidebar .nav-links {
+    margin: 0 auto;
+    padding-top: 5px;
+    text-align: center;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .nav-links li {
+    float: left;
+    padding-top: 5px;
+    text-decoration: underline;
+    color: #000;
+    font-size: .9em;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  #sidebar .contact-links {
+    display: none;
+  }
+
+  #main  {
+    width: 100vw;
+    float: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .main-window {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .intro .name {
+    font-size: 2em;
+  }
+
+  #main .intro .title {
+    font-size: 1.5em;
+  }
+
+
+  .intro .tagline {
+    font-size: 1.25em;
+  }
+
+  .coding-skills table{
+    width: auto;
+    padding: 0px 10px;
+  }
+
+  .coding-icon {
+    width: 100%;
+    height: auto;
+    padding-left: 0.1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
+
+  .coding-skills td:after {
+    bottom: 2em;
+  }
+
+  .coding-skills td:before {
+    bottom: 1.3em;
+  }
+
+  .splash-img {
+    height: 10em;
+  }
+
+  #main .secondary-h1 {
+    font-size: 1.9em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin: 0px;
+  }
+
+  .about-me p {
+    font-size: 1em;
+    width: 80%;
+    padding-bottom: 1em;
+  }
+
+  .project-window {
+    width: 90%;
+  }
+
+  .project-window img {
+    float: none;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .project-window ul {
+    float: none;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0px;
+    font-size: 1em;
+  }
+
+  .project-window h2 {
+    text-align: center;
+  }
+
+  .project-window .live-link,
+  .project-window .github-link {
+    position: relative;
+    left: 0;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+    margin-top: .1em;
+  }
+
+  .display-none {
+    opacity: 1;
+  }
+
+  .project-window .live-link {
+    top: 0;
+    position: relative;
+  }
+
+  .project-window .github-link {
+    top: 0 !important;
+    left: 0;
+    position: relative;
+  }
+
+  .resume-viewer {
+    width: 80%;
+  }
+
+  iframe {
+    margin: 0 auto !important;
+    width: 100%;
+    height: 100vw;
+  }
+
+  .contact-page {
+    margin: 0 auto;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .contact-box {
+    margin: 1%;
+    padding: 1em;
+    display: block;
+  }
+
+  .contact img {
+    height: 2em;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contact p {
+    font-size: 1em;
+  }
+
+  .display-zero {
+    display: block;
+  }
+
 }

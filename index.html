@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -20,11 +21,11 @@
     </script>
   </head>
   <body class="group">
-    <div id="sidebar">
-        <a href="top"><h1 class="main-logo">Steve</h1>
+    <div id="sidebar" class="group">
+        <a href="top" class="top"><h1 class="main-logo">Steve</h1>
         <h1 class="main-logo">Aragon</h1></a>
         <h2 class="main-logo">Web Developer</h2>
-        <ul class="nav-links">
+        <ul class="nav-links group">
           <a href="intro"><li class="nav-list-item">Intro <img class="nav-icon" src="assets/images/home.svg"></li></a>
           <a href="about-me"><li class="nav-list-item">About Me<img class="nav-icon" src="assets/images/man.svg"></li></a>
           <a href="projects"><li class="nav-list-item">Projects<img class="nav-icon" src="assets/images/folder.svg"></li></a>
@@ -42,6 +43,7 @@
     <div class="main-window">
 
       <div id="main">
+        <div class="mobile-space display-zero"></div>
         <a name="top"></a>
         <a name="intro"></a>
         <section class="intro">
@@ -85,8 +87,6 @@
           <h1 class="secondary-h1">Projects</h1>
           <div class="project-window group">
             <img src="assets/images/sixth-cents.png">
-            <a class="live-link display-none" href="http://www.sixthcents.co">Live Link</a>
-            <a class="github-link display-none" href="http://www.github.com/stearagon/sixth-cents">GitHub Link</a>
             <ul>
               <li><h2>Sixth Cents</h2></li>
               <li>A personal finance management app</li>
@@ -94,12 +94,12 @@
               <li>- Utilizes RESTful JSON API back-end</li>
               <li>- Single-page Backbone application</li>
             </ul>
+            <a class="live-link display-none" href="http://www.sixthcents.co">Live Link</a>
+            <a class="github-link display-none" href="http://www.github.com/stearagon/sixth-cents">GitHub Link</a>
           </div>
 
           <div class="project-window">
             <img src="assets/images/asteroids.png">
-            <a class="live-link display-none" href="http://www.stevearagon.io/asteroids">Live Link</a>
-            <a class="github-link display-none" href="http://www.github.com/stearagon/asteroids">GitHub Link</a>
             <ul>
               <li><h2>Asteroids</h2></li>
               <li>My version of the 1979 classic</li>
@@ -107,11 +107,12 @@
               <li>- Uses HTML5 Canvas to render board</li>
               <li>- Employs Trignometry to render ship position</li>
             </ul>
+            <a class="live-link display-none" href="http://www.stevearagon.io/asteroids">Live Link</a>
+            <a class="github-link display-none" href="http://www.github.com/stearagon/asteroids">GitHub Link</a>
           </div>
 
           <div class="project-window">
             <img src="assets/images/rails-lite.png">
-            <a class="github-link display-none" style=" top: 55px" href="http://www.github.com/stearagon/rails-lite">GitHub Link</a>
             <ul>
               <li><h2>Rails-Lite</h2></li>
               <li>Ruby web framework</li>
@@ -119,6 +120,7 @@
               <li>- Applies meta-programming methods</li>
               <li>- Parses nested params using Regex</li>
             </ul>
+            <a class="github-link display-none" style=" top: 55px" href="http://www.github.com/stearagon/rails-lite">GitHub Link</a>
           </div>
         </section>
         <a name="resume"></a>
@@ -207,6 +209,8 @@
           event.preventDefault();
           $("#main").scrollTo($("a[name=top]"),{duration: 500})
         })
+
+        $(".mobile-space").height($("#sidebar").height());
     </script>
   </body>
 </html>
