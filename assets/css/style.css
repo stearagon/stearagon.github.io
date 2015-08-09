@@ -473,7 +473,7 @@ strong {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   body {
     overflow-y: hidden;
   }
